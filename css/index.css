@@ -1,0 +1,17 @@
+/* CSS styles for the map container */
+#map-container {
+    width: 1200px;
+    height: 600px;
+    overflow: hidden;
+}
+
+/* CSS styles for the hover effect */
+.country:hover {
+    fill: purple;
+}
+
+.country {
+    /* fill: #29c5f6; */
+    stroke: #78716c;
+    stroke-width: 0.5;
+}
