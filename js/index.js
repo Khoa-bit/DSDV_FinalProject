@@ -47,7 +47,7 @@ async function getJSONData(url) {
 async function getSpecificColumnsFromCSV(recordDate) {
     let columns = ['Country/Region'];
     columns.push(recordDate);
-    let csvFile = '../data/netflix_titles_global.csv';
+    let csvFile = 'https://raw.githubusercontent.com/Khoa-bit/DSDV_FinalProject/main/data/netflix_titles_global.csv';
     const data = await d3.csv(csvFile);
 
     const summedData = data.reduce((result, item) => {
@@ -242,7 +242,7 @@ async function loadMap(data, caseData) {
 
 async function getCountryData(country, recordDate) {
     // CSV file URL
-    const csvFile = '../data/netflix_titles_global.csv';
+    const csvFile = 'https://raw.githubusercontent.com/Khoa-bit/DSDV_FinalProject/main/data/netflix_titles_global.csv';
 
     try {
         const data = await d3.csv(csvFile);
